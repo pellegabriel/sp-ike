@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Title } from "./component/title";
-import SearchFrom from "./component/SearchForm";
-import { MoviesList } from "./component/MoviesList";
+import { Title } from "./components/Title";
+import SearchFrom from "./components/SearchForm";
+import { MoviesList } from "./components/MoviesList";
 
 import "./App.css";
 import "bulma/css/bulma.css";
