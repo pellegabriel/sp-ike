@@ -26,7 +26,11 @@ class App extends Component {
     const hasId = url.searchParams.has("id");
 
     if (hasId) {
-      return <Detail id={url.searchParams.get("id")} />;
+      return (
+        <div className="Detail">
+          <Detail id={url.searchParams.get("id")} />
+        </div>
+      );
     }
     return (
       <div className="App">
@@ -37,7 +41,7 @@ class App extends Component {
         {this.state.usedSearch ? (
           this._renderResults()
         ) : (
-          <small>Use the form search a movie c:</small>
+          <small className="small">Use the form search a movie c:</small>
         )}
       </div>
     );
