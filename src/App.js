@@ -38,7 +38,7 @@ class App extends Component {
       // <Route path='/abaut' element={<div>About</div>} />
       // </BrouserRouter>
       //https://www.youtube.com/watch?v=7xRVnmWcTE8&ab_channel=FaztCodehttps://www.youtube.com/watch?v=7xRVnmWcTE8&ab_channel=FaztCode
-      //seguir el tuto
+      //seguir el tutoasdsadsadsa
 
       <div className="App">
         <Title>Search Movies</Title>
