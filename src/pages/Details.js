@@ -32,7 +32,9 @@ export class Detail extends Component {
 
     return (
       <div className="Details">
-        <button onClick={this._goBack}>Volver</button>
+        <button className="volver" onClick={this._goBack}>
+          Volver
+        </button>
         <h1>{Title}</h1>
         <img src={Poster} />
         <h3>{Actors}</h3>

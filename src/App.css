@@ -32,7 +32,13 @@
   margin-bottom: 24px;
   width: 40%;
 }
+.Detail button {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
 .Detail {
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
 }
