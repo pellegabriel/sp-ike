@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Title } from "./components/Title";
 import SearchFrom from "./components/SearchForm";
 import { MoviesList } from "./components/MoviesList";
+//import{BrowserRouter, Route, Routes} from 'react-router-dom'
 
 import "./App.css";
 import "bulma/css/bulma.css";
@@ -33,6 +34,12 @@ class App extends Component {
       );
     }
     return (
+      //<BrouserRouter>
+      // <Route path='/abaut' element={<div>About</div>} />
+      // </BrouserRouter>
+      //https://www.youtube.com/watch?v=7xRVnmWcTE8&ab_channel=FaztCodehttps://www.youtube.com/watch?v=7xRVnmWcTE8&ab_channel=FaztCode
+      //seguir el tuto
+
       <div className="App">
         <Title>Search Movies</Title>
         <div className="SearchForm-wrapper">
