@@ -7,8 +7,7 @@ body {
   background: rgb(5, 45, 45);
   background: linear-gradient(
     0deg,
-    rgba(5, 45, 45, 1) 11%,
-    rgba(134, 196, 196, 1) 100%
+    #1c0b73 11%, #026ab5 100%
   );
   margin: 0px;
   min-height: 100%;
