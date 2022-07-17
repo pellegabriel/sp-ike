@@ -45,8 +45,9 @@
   background-color: rgb(46, 43, 43);
 }
 .Detail button:hover {
-opacity: 0.8;
-filter: alpha(opacity=80);} 
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
 
 .Detail {
   text-align: center;
@@ -55,18 +56,23 @@ filter: alpha(opacity=80);}
 }
 .Details h1 {
   color: rgb(249, 249, 249);
-  font-style:unset ;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border-top-left-radius: 30px ;
+  font-style: unset;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  font-size:190%;
-  background-image: linear-gradient(45deg, #0d0548  0%, #026ab5  51%, #0d0548  100%);
+  font-size: 190%;
+  background-image: linear-gradient(
+    45deg,
+    #0d0548 0%,
+    #026ab5 51%,
+    #0d0548 100%
+  );
   width: 21.5%;
   margin: auto;
 }
 .Details p {
   width: 50%;
-margin: auto;
+  margin: auto;
 }
 .media-content p {
   color: whitesmoke;
@@ -76,8 +82,13 @@ margin: auto;
   color: aliceblue;
 }
 
- .card {
-  background-image: linear-gradient(45deg, #0d0548  0%, #026ab5  51%, #0d0548  100%);
+.card {
+  background-image: linear-gradient(
+    45deg,
+    #0d0548 0%,
+    #026ab5 51%,
+    #0d0548 100%
+  );
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -89,14 +100,14 @@ margin: auto;
   display: block;
   border: 0px;
   font-weight: 700;
- }
- 
- .card:hover {
-  background-position: top bottom;
+}
+
+.card:hover {
+  background-position: right left;
   color: #fff;
   text-decoration: none;
- }
- 
- .card:active {
+}
+
+.card:active {
   transform: scale(0.95);
- }
+}
