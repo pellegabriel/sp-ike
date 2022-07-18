@@ -34,15 +34,12 @@
 }
 
 .Detail button {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
   color: #18234c;
   z-index: 1;
-  background: hsl(221, 100%, 64%);
+  background: hsl(221, 100%, 58%);
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -84,7 +81,6 @@
   color: aliceblue;
 }
 .Details h1 {
-  margin-top: ;
   color: rgb(249, 249, 249);
   font-style:unset ;
   font-family: Georgia, 'Times New Roman', Times, serif;
