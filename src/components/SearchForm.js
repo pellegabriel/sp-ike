@@ -8,7 +8,9 @@ export default class SearchForm extends Component {
   };
 
   _handleChange = (e) => {
-    this.setState({ inputMovie: e.target.value });
+    this.setState({ 
+      inputMovie: e.target.value 
+    });
   };
 
   _handleSubmit = (e) => {
@@ -18,8 +20,10 @@ export default class SearchForm extends Component {
     fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
       .then((res) => res.json())
       .then((results) => {
-        const { Search = [], totalResults = "0" } = results;
-        console.log({ Search, totalResults });
+        const { 
+          Search = [], 
+          totalResults = "0" 
+        } = results;
         this.props.onResults(Search);
       });
   };
@@ -37,7 +41,9 @@ export default class SearchForm extends Component {
             />
           </div>
           <div className="control">
-            <button className="button is-info">Search</button>
+            <button className="button is-info">
+              Search
+            </button>
           </div>
         </div>
       </form>

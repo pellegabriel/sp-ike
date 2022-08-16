@@ -11,9 +11,8 @@ export class Detail extends Component {
 
   _fetchMovie({ id }) {
     fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
-      .then((res) => res.json())
-      .then((movie) => {
-        console.log({ movie });
+    .then((res) => res.json())
+    .then((movie) => {
         this.setState({ movie });
       });
   }
@@ -27,19 +26,35 @@ export class Detail extends Component {
     this._fetchMovie({ id });
   }
   render() {
-    console.log("Jorgitoxd", { movie: this.state.movie });
-    const { Title, Poster, Actors, Metascore, Plot } = this.state.movie;
+    const { 
+      Actors, 
+      Metascore, 
+      Plot,
+      Poster,
+      Title  
+    } = this.state.movie;
 
     return (
       <div className="Details">
         <button className="volver" onClick={this._goBack}>
           Volver
         </button>
-        <h1>{Title}</h1>
-        <img alt='' src={Poster} />
-        <h3>{Actors}</h3>
-        <span>{Metascore}</span>
-        <p>{Plot}</p>
+        <h1>
+          {Title}
+        </h1>
+        <img 
+          alt='' 
+          src={Poster} 
+        />
+        <h3>
+          {Actors}
+        </h3>
+        <span>
+          {Metascore}
+        </span>
+        <p>
+          {Plot}
+        </p>
       </div>
     );
   }

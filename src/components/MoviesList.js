@@ -11,19 +11,22 @@ export class MoviesList extends Component {
     const { movies } = this.props;
     return (
       <div className="MoviesList">
-        {movies.map((movie) => {
-          return (
-            <div key={movie.imdbID} className="MovieList-item">
-              <Movie
-                id={movie.imdbID}
-                title={movie.Title}
-                year={movie.Year}
-                poster={movie.Poster}
-              />
-            </div>
-          );
-        })}
+        {movies.map(
+          (movie) => {
+            return (
+              <div key={movie.imdbID} className="MovieList-item">
+                <Movie
+                  id={movie.imdbID}
+                  title={movie.Title}
+                  year={movie.Year}
+                  poster={movie.Poster}
+                />
+              </div>
+            )
+          }
+        )
+      }
       </div>
-    );
+    )
   }
 }
