@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Title } from "./components/Title";
+import { Title } from "./components/title";
 import SearchFrom from "./components/SearchForm";
 import { MoviesList } from "./components/MoviesList";
 import{BrowserRouter, Route, Routes} from 'react-router-dom'
