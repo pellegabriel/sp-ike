@@ -21,8 +21,7 @@ export default class SearchForm extends Component {
       .then((res) => res.json())
       .then((results) => {
         const { 
-          Search = [], 
-          totalResults = "0" 
+          Search = []
         } = results;
         this.props.onResults(Search);
       });
