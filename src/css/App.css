@@ -127,3 +127,8 @@ margin: auto;
  .card:active {
   transform: scale(0.95);
  }
+ @media screen and (max-width: 600px){
+  .contenedor{
+    height: 100%;
+      width: 100%;;
+  }}
